@@ -1,7 +1,4 @@
-﻿/* =========================
-   BODY & CONTAINER
-========================= */
-*{
+﻿*{
     box-sizing: border-box;
 }
 
@@ -40,9 +37,7 @@ label{
     align-items: center;
 }
 
-/* =========================
-   LOGIN / REGISTER / AGREEMENT BOXES
-========================= */
+/* Login, Register, Agreement */
 .outer{
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
@@ -85,10 +80,8 @@ label{
     visibility: hidden;
 }
 
-/* =========================
-   LOGO SECTION
-========================= */
-.logo{
+/* LOGO SECTION */
+.head{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +94,7 @@ h1{
     margin-bottom: 8px;
     font-size: 1.5rem;
     color: whitesmoke;
+    
 }
 
 h4{
@@ -110,9 +104,7 @@ h4{
     color: silver;
 }
 
-/* =========================
-   FORM
-========================= */
+/* Form */
 form{
     width: 100%;
     padding: 0 20px;
@@ -186,9 +178,7 @@ form{
     background-color: whitesmoke;
 }
 
-/* =========================
-   REMEMBER & FORGOT PASSWORD
-========================= */
+/* REMEMBER & FORGOT PASSWORD */
 .rem-for-pass{
     display: flex;
     align-items: center;
@@ -222,9 +212,7 @@ form{
     white-space: nowrap;
 }
 
-/* =========================
-   LINKS
-========================= */
+/* Links */
 a{
     color: rgb(9, 151, 207);
     text-decoration: none;
@@ -248,9 +236,7 @@ a:hover::after{
     transform: scaleX(1);
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* Button */
 button{
     width: 100%;
     height: 30px;
@@ -297,9 +283,7 @@ button{
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
 
-/* =========================
-   REGISTER SECTION
-========================= */
+/* Register Section */
 .btn{
     height: 34px;
     width: min(220px, 100%);
@@ -333,9 +317,7 @@ button{
     align-items: center;
     color: black;
 }
-/* =========================
-   TABLET RESPONSIVE
-========================= */
+/* Tablet Responsive */
 @media (min-width: 768px) and (max-width: 1024px){
     body{
         background:url(./assets/TabletBackground.png) no-repeat center center fixed;
@@ -412,9 +394,7 @@ button{
     }
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* Mobile */
 @media (max-width: 767px){
     body{
         background:url(./assets/MobileBackground.png) no-repeat center center fixed;
