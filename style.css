@@ -370,8 +370,8 @@ button{
 
     .outer{
         margin-left: 0;
-        width: min(100%, 380px);
-        max-width: 380px;
+        width: min(100%, 390px);
+        max-width: 390px;
         height: auto;
         padding: 14px;
         margin-top: 0;
