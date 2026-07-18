@@ -7,7 +7,7 @@ body{
     max-height: 90vh;
     justify-content: center;
     align-items: center;
-    background:url(./assets/DesktopBackground.png) no-repeat center center fixed;
+    background:url(/assets/DesktopBackground.png) no-repeat center center fixed;
     background-size: cover;
     padding: 1.25rem;
     position: relative;
