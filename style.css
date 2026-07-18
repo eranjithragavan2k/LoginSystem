@@ -193,6 +193,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 
 #remember{
@@ -363,11 +364,16 @@ button{
         background:url(./assets/MobileBackground.png) no-repeat center center fixed;
         background-size: cover;
         align-items: flex-start;
+        height: 100vh;
+        height: 100svh;
         padding: 24px 14px;
+        overflow-y: hidden;
     }
 
     .container{
         align-items: flex-start;
+        min-height: 100vh;
+        min-height: 100svh;
         padding-top: 32vh;
     }
 
@@ -395,8 +401,9 @@ button{
     }
 
     .rem-for-pass{
-        align-items: flex-start;
-        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 8px;
     }
 
@@ -405,12 +412,13 @@ button{
     }
 
     #rem-lable{
-        font-size: 12px;
+        font-size: 11px;
         color: black;
+        white-space: nowrap;
     }
 
     a{
-        font-size: 12px;
+        font-size: 11px;
         color: black;
     }
 }
