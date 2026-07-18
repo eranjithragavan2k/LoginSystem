@@ -397,11 +397,6 @@ button{
 
     .signIn{
         width: 100%;
-        padding-left: 0;
-        background-color: transparent;
-        color: whitesmoke;
-        box-shadow: none;
-        transition: all 0.2s ease;
     }
 
     .rem-for-pass{
