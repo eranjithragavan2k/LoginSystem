@@ -329,6 +329,7 @@ button{
     body{
         background:url(./assets/TabletBackground.png) no-repeat center center fixed;
         background-size: cover;
+        overflow-y: hidden;
     }
 
     .outer{
@@ -391,7 +392,7 @@ button{
     }
 
     form{
-        padding: 0 8px;
+        padding: 0 10px;
     }
 
     .rem-for-pass{
