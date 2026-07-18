@@ -391,9 +391,8 @@ button{
         text-align: center;
     }
 
-    form{
+    .forms{
         padding: 0 10px;
-        margin-right: 10px;
     }
 
     .rem-for-pass{
@@ -402,7 +401,7 @@ button{
         gap: 8px;
     }
 
-    .stage-controls{
+    .forms{
         gap: 12px;
     }
 
