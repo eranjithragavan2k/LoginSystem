@@ -7,7 +7,7 @@ body{
     max-height: 90vh;
     justify-content: center;
     align-items: center;
-    background:url(/assets/DesktopBackground.png) no-repeat center center fixed;
+    background:url(./assets/DesktopBackground.png) no-repeat center center fixed;
     background-size: cover;
     padding: 1.25rem;
     position: relative;
@@ -313,7 +313,7 @@ button{
 ========================= */
 @media (max-width: 768px){
     body{
-        background:url(/assets/TabletBackground.png) no-repeat center center fixed;
+        background:url(./assets/TabletBackground.png) no-repeat center center fixed;
         background-size: cover;
     }
 
@@ -342,7 +342,7 @@ button{
 ========================= */
 @media (max-width: 360px){
     body{
-        background:url(/assets/MobileBackground.png) no-repeat center center fixed;
+        background:url(./assets/MobileBackground.png) no-repeat center center fixed;
         background-size: cover;
     }
 
