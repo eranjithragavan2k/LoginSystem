@@ -355,7 +355,7 @@ button{
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
-@media (max-width: 767px){
+@media (max-width: 500px){
     body{
         background:url(./assets/MobileBackground.png) no-repeat center center fixed;
         background-size: cover;
