@@ -395,10 +395,6 @@ button{
         padding: 0 10px;
     }
 
-    .signIn, .signUp {
-        width: 50%;
-    }
-
     .rem-for-pass{
         align-items: flex-start;
         flex-direction: column;
