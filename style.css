@@ -395,7 +395,7 @@ button{
         padding: 0 10px;
     }
 
-    .signIn{
+    .signIn, .signUp {
         width: 100%;
     }
 
