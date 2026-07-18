@@ -1,10 +1,21 @@
 ﻿/* =========================
    BODY & CONTAINER
 ========================= */
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    min-height: 100%;
+    margin: 0;
+}
+
 body{
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
     display: flex;
-    max-height: 90vh;
+    min-height: 100vh;
+    min-height: 100svh;
     justify-content: center;
     align-items: center;
     background:url(./assets/DesktopBackground.png) no-repeat center center fixed;
@@ -21,7 +32,8 @@ label{
 }
 
 .container{
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -52,7 +64,6 @@ label{
     transition: transform 0.35s ease-in-out;
     width: 200%;
     max-width: 720px;
-    max-height: 500px;
     height: auto;
 }
 
@@ -96,7 +107,8 @@ h4{
    FORM
 ========================= */
 form{
-    margin-left: 30px;
+    width: 100%;
+    padding: 0 20px;
  }
 
 .form-step {
@@ -150,7 +162,7 @@ form{
 }
 
 .inputs{
-    width: 85%;
+    width: 100%;
     height: 30px;
     padding-left: 13px;
     font-size: 14px;
@@ -172,6 +184,9 @@ form{
 ========================= */
 .rem-for-pass{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
 
 .remember-me{
@@ -194,9 +209,9 @@ form{
 }
 
 .forgot-password{
-    padding-left: 100px;
     font-size: 12px;
     color: black;
+    white-space: nowrap;
 }
 
 /* =========================
@@ -229,9 +244,9 @@ a:hover::after{
    BUTTONS
 ========================= */
 button{
-    width: 90%;
+    width: 100%;
     height: 30px;
-    padding-left: 30px;
+    padding: 0 12px;
     background-color: rgb(9, 151, 207);
     color: white;
     font-size: 14px;
@@ -250,7 +265,6 @@ button{
 }
 .next-btn{
     background-color: rgb(9, 151, 207);
-    margin-right: 30px;
     width: 45%;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -319,11 +333,11 @@ button{
 
     .outer{
         margin-left: 0;
-        width: 55%;
-        max-width: 100%;
+        width: min(460px, 80vw);
+        max-width: 460px;
         height: auto;
         padding: 10px;
-        margin-top: 90px;
+        margin-top: 0;
     }
 
     #rem-lable{
@@ -340,28 +354,63 @@ button{
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
-@media (max-width: 360px){
+@media (max-width: 767px){
     body{
         background:url(./assets/MobileBackground.png) no-repeat center center fixed;
         background-size: cover;
+        align-items: flex-start;
+        padding: 24px 14px;
+    }
+
+    .container{
+        align-items: flex-start;
+        padding-top: 32vh;
     }
 
     .outer{
         margin-left: 0;
-        width: 100%;
-        max-width: 100%;
+        width: min(100%, 380px);
+        max-width: 380px;
         height: auto;
-        padding: 10px;
-        margin-top: 90px;
+        padding: 14px;
+        margin-top: 0;
+    }
+
+    .btn{
+        margin: 14px auto 24px;
+    }
+
+    h1{
+        font-size: 1.35rem;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    form{
+        padding: 0 8px;
+    }
+
+    .rem-for-pass{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .stage-controls{
+        gap: 12px;
     }
 
     #rem-lable{
-        font-size: 8px;
+        font-size: 12px;
         color: black;
     }
 
     a{
-        font-size: 8px;
+        font-size: 12px;
         color: black;
     }
 }
