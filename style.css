@@ -2,13 +2,9 @@
     box-sizing: border-box;
 }
 
-html,
 body{
     min-height: 100%;
     margin: 0;
-}
-
-body{
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
     display: flex;
     min-height: 100vh;
@@ -139,7 +135,7 @@ form{
 
 .agreement-text h4 {
     margin-bottom: 6px;
-    color: black;
+    color: whitesmoke;
 }
 
 .agreement-text p {
@@ -178,7 +174,7 @@ form{
     background-color: whitesmoke;
 }
 
-/* REMEMBER & FORGOT PASSWORD */
+/* Remember & Forgot Password */
 .rem-for-pass{
     display: flex;
     align-items: center;
@@ -202,19 +198,19 @@ form{
 }
 
 #rem-lable{
-    color: rgb(9, 151, 207);
+    color: whitesmoke;
     font-size: 12px;
 }
 
 .forgot-password{
     font-size: 12px;
-    color: black;
+    color: whitesmoke;
     white-space: nowrap;
 }
 
 /* Links */
 a{
-    color: rgb(9, 151, 207);
+    color: whitesmoke;
     text-decoration: none;
     position: relative;
 }
@@ -226,7 +222,7 @@ a::after{
     bottom: -5px;
     width: 100%;
     height: 3px;
-    background: rgb(9, 151, 207);
+    background: whitesmoke;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
@@ -315,7 +311,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: whitesmoke;
 }
 /* Tablet Responsive */
 @media (min-width: 768px) and (max-width: 1024px){
@@ -336,12 +332,12 @@ button{
 
     #rem-lable{
         font-size: 13px;
-        color: black;
+        color: whitesmoke;
     }
 
     a{
         font-size: 13px;
-        color: black;
+        color: whitesmoke;
     }
 }
 
@@ -449,12 +445,12 @@ button{
 
     #rem-lable{
         font-size: 11px;
-        color: black;
+        color: whitesmoke;
         white-space: nowrap;
     }
 
     a{
         font-size: 11px;
-        color: black;
+        color: whitesmoke;
     }
 }
