@@ -330,6 +330,10 @@ button{
         margin-top: 0;
     }
 
+    .forms .sign-in{
+        margin-left: 20%;
+    }
+
     #rem-lable{
         font-size: 13px;
         color: whitesmoke;
@@ -406,7 +410,7 @@ button{
         align-items: flex-start;
         min-height: 100vh;
         min-height: 100svh;
-        padding-top: 32vh;
+        padding-top: 45%;
     }
 
     .outer{
