@@ -22,13 +22,28 @@ function showStage(stage) {
 }
 
 function bindButtons() {
+    if (!signInBtn || !signUpBtn || !registerForm || !signInForm) {
+        console.warn('Registration UI not fully loaded yet.');
+    }
+
     signInBtn?.addEventListener('click', () => showPanel('signin'));
     signUpBtn?.addEventListener('click', () => showPanel('signup'));
 
-    document.querySelector('#stage1 .next-btn')?.addEventListener('click', () => nextStage(1));
-    document.querySelector('#stage2 .prev-btn')?.addEventListener('click', () => prevStage(2));
-    document.querySelector('#stage2 .next-btn')?.addEventListener('click', () => nextStage(2));
-    document.querySelector('#stage3 .prev-btn')?.addEventListener('click', () => prevStage(3));
+    const stage1Next = document.querySelector('#stage1 .next-btn');
+    if (!stage1Next) console.warn('Stage 1 Next button not found');
+    stage1Next?.addEventListener('click', () => nextStage(1));
+
+    const stage2Prev = document.querySelector('#stage2 .prev-btn');
+    if (!stage2Prev) console.warn('Stage 2 Previous button not found');
+    stage2Prev?.addEventListener('click', () => prevStage(2));
+
+    const stage2Next = document.querySelector('#stage2 .next-btn');
+    if (!stage2Next) console.warn('Stage 2 Next button not found');
+    stage2Next?.addEventListener('click', () => nextStage(2));
+
+    const stage3Prev = document.querySelector('#stage3 .prev-btn');
+    if (!stage3Prev) console.warn('Stage 3 Previous button not found');
+    stage3Prev?.addEventListener('click', () => prevStage(3));
 }
 
 function sanitizeInput(value) {
@@ -44,8 +59,9 @@ function nextStage(stage) {
     if (stage === 1) {
         const staffName = registerForm.querySelector('#register-staff-name');
         const staffId = registerForm.querySelector('#register-staff-id');
-        if (!staffName?.value.trim() || !staffId?.value.trim()) {
-            alert('Please fill in the teaching staff name and ID.');
+        const staffEmail = registerForm.querySelector('#register-staff-email');
+        if (!staffName?.value.trim() || !staffId?.value.trim() || !staffEmail?.value.trim()) {
+            alert('Please fill in the teaching staff name, ID, and email.');
             return;
         }
     }
