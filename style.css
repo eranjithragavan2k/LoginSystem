@@ -253,6 +253,9 @@ button{
     padding-left: 10px;
     margin-bottom: 10px;
 }
+#stage1 .next-btn {
+    width: 100%;
+}
 .next-btn{
     background-color: rgb(9, 151, 207);
     width: 45%;
